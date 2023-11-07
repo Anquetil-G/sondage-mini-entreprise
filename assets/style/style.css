@@ -1,0 +1,153 @@
+/* -------------------------------- CSS-RESET ------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------------------------- GENERAL -------------------------------- */
+
+* {
+    font-family: 'gg-sans-medium', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e9eee6;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+/* -------------------------------- QUESTIONS ------------------------------- */
+
+main .question {
+    font-size: 2.5rem
+}
+#injectQuestion {
+    text-align: center;
+}
+@media screen and (max-width: 950px) {
+    main .question {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 680px) {
+    main .question {
+        font-size: 1.5rem;
+    }
+}
+
+/* --------------------------------- ANSWERS -------------------------------- */
+
+main .answer {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 1.3rem;
+}
+main .answer-type-1 ul li {
+    padding: 9px;
+    margin: 6px 10px;
+    background: rgb(190, 190, 190);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+main .answer-type-2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+main .answer-type-2 ul li {
+    padding: 9px 12px;
+    margin: 5px 5px 15px;
+    background: rgb(190, 190, 190);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+main .answer-type-1 ul li:hover, main .answer-type-2 ul li:hover {
+    background: rgb(174, 174, 174);
+}
+@media screen and (max-width: 680px) {
+    main .answer {
+        font-size: 1.05rem;
+    }
+    main .answer-type-2 ul li {
+        padding: 7px 10px;
+        margin: 4px;
+    }
+    main .answer-type-2 ul {
+        justify-content: left;
+    }
+}
+.answer-clicked {
+    background: #4bcf5b !important;
+}
+
+/* --------------------------------- BUTTON --------------------------------- */
+
+main .button button {
+    margin-top: 10px;
+    padding: 10px 65px;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    border: none;
+    background: rgb(150, 150, 150);
+    color: rgb(73, 73, 73);
+    cursor: not-allowed;
+    transition: 0.2s;
+}
+main .button .approved-button {
+    background: #4bcf5b !important;
+    color: black !important;
+    cursor: pointer !important;
+}
+main .button .approved-button:hover {
+    background: #45bd53 !important;
+}
