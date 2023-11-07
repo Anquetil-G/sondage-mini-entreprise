@@ -2,7 +2,7 @@
     question1: ["Nous serons présents à la foire de rouen, envisagez-vous de venir ?", 0, ["a. Oui", "a. Non"]],
     question2: ["Si vous avez un jardin, avez-vous un potager ?", 0, ["a. Oui", "b. Non", "c. Je n'ai pas de jardin"]],
     question3: ["Sur une échelle de 0 à 10, quelle importance accordez-vous au caractère écologique ?", 1],
-    question4: ["Sur une échelle de 0 à 10, seriez-vous interressé par l'achat de décrorations interieures (petit terrarium) ?", 1],
+    question4: ["Sur une échelle de 0 à 10, seriez-vous interressé par l'achat de décorations interieures (petit terrarium) ?", 1],
     question5: ["Et quel est le prix maximum que vous seriez prêt à mettre pour ce type de produit ?", 0, ["a. 5 à 15 €", "a. 15 à 25 €", "a. 25 à 35 €", "a. 35 à 45 €"]],
     question6: ["Préféreriez-vous un terrarium tout fait ou un kit pour l'assembler vous même ?", 0, ["1. Kit", "2. Tout fait"]],
 };
